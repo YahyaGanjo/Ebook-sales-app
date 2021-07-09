@@ -1,0 +1,24 @@
+<section class="py-2">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h1 class="display-3 mt-3 pt-5">
+                Web Development Ebook
+            </h1><p class="lead">Learn web development front to back</p>
+            <form action="/purchase" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js"
+    class="stripe-button"
+    data-key='{{stripePublishableKey}}''
+    data-name="your e-book"
+    data-description="written by Yahya Ganjo"
+    data-image="/img/logo_size_invert.jpg"
+    data-amount="2000"
+    data-currency="eur">
+  </script>
+</form>
+        </div>
+        <div class="col-md-6">
+            <img src="/img/book.jpg" alt="book" class="img-fluid">
+        </div>
+    </div>
+</section>
